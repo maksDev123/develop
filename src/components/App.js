@@ -60,9 +60,9 @@ function App() {
             <></>}
           <Route exact path="/manager" element={<Curator_menager />} />
           <Route exact path="/" element={<Main />} />
-          <Route path="/update-profile" element={<UpdateProfile />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
+          <Route exact path="/update-profile" element={<UpdateProfile />} />
+          <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/" element={<Main_Page />} />
           <Route path="/about" element={<About />} />

@@ -6,7 +6,7 @@ import { AuthProvider } from './contexts/AuthContexts';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={window.location.pathname || ''}>
     <AuthProvider>
       <App />
     </AuthProvider>

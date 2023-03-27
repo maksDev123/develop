@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/develop/static/css/main.d0cb4d02.css",
-    "main.js": "/develop/static/js/main.801cefcb.js",
+    "main.js": "/develop/static/js/main.0ef2e506.js",
     "static/media/collegium.png": "/develop/static/media/collegium.dd338ed7353fcc716188.png",
     "static/media/icon2.png": "/develop/static/media/icon2.9561bc1b04de104f4a53.png",
     "index.html": "/develop/index.html",
     "main.d0cb4d02.css.map": "/develop/static/css/main.d0cb4d02.css.map",
-    "main.801cefcb.js.map": "/develop/static/js/main.801cefcb.js.map"
+    "main.0ef2e506.js.map": "/develop/static/js/main.0ef2e506.js.map"
   },
   "entrypoints": [
     "static/css/main.d0cb4d02.css",
-    "static/js/main.801cefcb.js"
+    "static/js/main.0ef2e506.js"
   ]
 }

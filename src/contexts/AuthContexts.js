@@ -25,7 +25,7 @@ export function AuthProvider({ children }) {
     function signup(email, password, role,rooms) {
         return  auth.createUserWithEmailAndPassword(email, password).then((result) => {
             console.log(result)
-            axios.post(`http://maksym137.pythonanywhere.com/create_user`, {
+            axios.post(`https://maksym137.pythonanywhere.com/create_user`, {
                 email: email,
                 role: role,
                 uid:result.user._delegate.uid,
@@ -59,7 +59,7 @@ export function AuthProvider({ children }) {
         const unsubscribe = auth.onAuthStateChanged(user => {
             setCurrentUser(user)
             if (user) {
-                axios.post('http://maksym137.pythonanywhere.com/login', {
+                axios.post('https://maksym137.pythonanywhere.com/login', {
                     uid: user._delegate.uid
                 })
                     .then(function (response) {

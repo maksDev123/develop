@@ -122,7 +122,7 @@ function Form_reg(props) {
             }
         }
         setRoom((prev) => ({ ...prev, "furniture_list": new_furniture_list }))
-        axios.post(`http://maksym137.pythonanywhere.com/room/${id_coded}/submit`, room)
+        axios.post(`https://maksym137.pythonanywhere.com/room/${id_coded}/submit`, room)
             .then(res => {
                 console.log(res.data)
                 routeChange("/")

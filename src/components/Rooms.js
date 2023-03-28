@@ -29,11 +29,11 @@ const Rooms = (props) => {
       new_rooms.push(new_room)
     }
     setResponse(new_rooms)
-    axios.post('http://localhost:5000/verify', { room_n: room_number, u_id: user_id })
+    axios.post('http://maksym137.pythonanywhere.com/verify', { room_n: room_number, u_id: user_id })
   }
   useEffect(() => {
     setLoading(true)
-    axios.get(`http://localhost:5000/curator_rooms/${props.user_id}`)
+    axios.get(`http://maksym137.pythonanywhere.com/curator_rooms/${props.user_id}`)
       .then(res => {
         console.log(res)
         setResponse(res.data)
